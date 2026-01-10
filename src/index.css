@@ -2,87 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Omnific Fitouts LLP - Luxury Interior Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Deep Charcoal & Warm Gold Luxury Palette */
+    --background: 40 20% 98%;
+    --foreground: 30 10% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 15% 96%;
+    --card-foreground: 30 10% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 30 10% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm Gold Primary */
+    --primary: 38 65% 50%;
+    --primary-foreground: 40 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cream Secondary */
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 30 10% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Slate Muted */
+    --muted: 30 10% 92%;
+    --muted-foreground: 30 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Rich Gold Accent */
+    --accent: 38 70% 45%;
+    --accent-foreground: 40 20% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 38 65% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
+    /* Custom luxury tokens */
+    --charcoal: 30 10% 12%;
+    --charcoal-light: 30 8% 20%;
+    --gold: 38 65% 50%;
+    --gold-light: 38 70% 60%;
+    --gold-dark: 38 60% 40%;
+    --cream: 40 30% 96%;
+    --cream-dark: 40 20% 90%;
+    --slate: 220 10% 40%;
+    --warm-white: 40 20% 98%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(38 65% 50%), hsl(38 70% 60%));
+    --gradient-dark: linear-gradient(180deg, hsl(30 10% 12%), hsl(30 8% 18%));
+    --gradient-cream: linear-gradient(180deg, hsl(40 30% 96%), hsl(40 20% 90%));
+    --gradient-hero-overlay: linear-gradient(90deg, hsla(30, 10%, 8%, 0.85) 0%, hsla(30, 10%, 8%, 0.4) 60%, transparent 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 20px 60px -15px hsla(30, 10%, 12%, 0.15);
+    --shadow-card: 0 4px 20px -4px hsla(30, 10%, 12%, 0.1);
+    --shadow-gold: 0 10px 40px -10px hsla(38, 65%, 50%, 0.3);
+
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 30 10% 8%;
+    --foreground: 40 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 30 10% 10%;
+    --card-foreground: 40 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 30 10% 8%;
+    --popover-foreground: 40 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 38 65% 55%;
+    --primary-foreground: 30 10% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 30 8% 18%;
+    --secondary-foreground: 40 20% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 30 8% 18%;
+    --muted-foreground: 40 10% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 70% 50%;
+    --accent-foreground: 30 10% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 38 65% 55%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -99,7 +121,112 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-luxury {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .section-padding {
+    @apply py-24 lg:py-32;
+  }
+
+  .divider-gold {
+    @apply w-20 h-0.5 bg-primary;
+  }
+
+  .btn-luxury {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           bg-primary text-primary-foreground font-medium
+           tracking-wider uppercase text-sm
+           transition-all duration-300 ease-out
+           hover:bg-accent hover:shadow-gold-glow
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .btn-ghost-luxury {
+    @apply inline-flex items-center justify-center px-8 py-4 
+           border border-primary/30 text-foreground font-medium
+           tracking-wider uppercase text-sm
+           transition-all duration-300 ease-out
+           hover:bg-primary/5 hover:border-primary
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:bottom-0 
+           after:left-0 after:w-0 after:h-px after:bg-primary 
+           after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-card-luxury {
+    box-shadow: var(--shadow-card);
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero-overlay);
+  }
+
+  .bg-gradient-dark {
+    background: var(--gradient-dark);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
