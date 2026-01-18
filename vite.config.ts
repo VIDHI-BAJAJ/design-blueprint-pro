@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(() => ({
-  base: "/", // ✅ REQUIRED for custom domain
+  base: "/",
 
   server: {
     host: "localhost",
