@@ -5,16 +5,22 @@ import { Layout } from "@/components/layout/Layout";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ArrowUpRight } from "lucide-react";
 import heroImage from "@/assets/hero-interior.jpg";
-import projectRetail from "@/assets/project-retail.jpg";
-import projectOffice from "@/assets/project-office.jpg";
-import projectResidential from "@/assets/project-residential.jpg";
-import projectHospitality from "@/assets/project-hospitality.jpg";
+
+// Individual project images - each project has its own unique image
+import projectLevis from "@/assets/project-levis.jpg";
+import projectLouisPhilippe from "@/assets/project-louis-philippe.jpg";
+import projectPenthouse from "@/assets/project-penthouse.jpg";
+import projectCalvinKlein from "@/assets/project-calvin-klein.jpg";
+import projectRaymond from "@/assets/project-raymond.jpg";
+import projectAsics from "@/assets/project-asics.jpg";
+import projectCcd from "@/assets/project-ccd.jpg";
+import projectClove from "@/assets/project-clove.jpg";
 
 const categories = ["All", "Retail", "Commercial", "Residential", "Hospitality"];
 
 const projects = [
   {
-    image: projectRetail,
+    image: projectLevis,
     category: "Retail",
     title: "Levi's Flagship Store",
     location: "Connaught Place, New Delhi",
@@ -22,7 +28,7 @@ const projects = [
       "A signature retail experience featuring custom fixtures, premium materials, and innovative display solutions.",
   },
   {
-    image: projectOffice,
+    image: projectLouisPhilippe,
     category: "Commercial",
     title: "Louis Philippe Showroom",
     location: "DLF Mall, Gurugram",
@@ -30,7 +36,7 @@ const projects = [
       "Elegant menswear retail environment with sophisticated wood paneling and ambient lighting.",
   },
   {
-    image: projectResidential,
+    image: projectPenthouse,
     category: "Residential",
     title: "Luxury Penthouse",
     location: "Greater Kailash, New Delhi",
@@ -38,7 +44,7 @@ const projects = [
       "A bespoke residential masterpiece featuring custom furniture and premium finishes throughout.",
   },
   {
-    image: projectHospitality,
+    image: projectCalvinKlein,
     category: "Hospitality",
     title: "Calvin Klein Store",
     location: "Elante Mall, Chandigarh",
@@ -46,7 +52,7 @@ const projects = [
       "Minimalist luxury retail design reflecting the brand's contemporary aesthetic.",
   },
   {
-    image: projectRetail,
+    image: projectRaymond,
     category: "Retail",
     title: "Raymond Shop",
     location: "Multiple Locations",
@@ -54,7 +60,7 @@ const projects = [
       "Premium suiting retail experience with made-to-measure consultation areas.",
   },
   {
-    image: projectOffice,
+    image: projectAsics,
     category: "Commercial",
     title: "ASICS Experience Center",
     location: "Select Citywalk, Delhi",
@@ -62,7 +68,7 @@ const projects = [
       "Sports retail innovation featuring the Foot ID technology zone and dynamic displays.",
   },
   {
-    image: projectHospitality,
+    image: projectCcd,
     category: "Hospitality",
     title: "Café Coffee Day Outlet",
     location: "New Delhi",
@@ -70,7 +76,7 @@ const projects = [
       "Warm and inviting café environment designed for comfort and social interaction.",
   },
   {
-    image: projectResidential,
+    image: projectClove,
     category: "Commercial",
     title: "Clove Dental Clinic",
     location: "Multiple Locations",
