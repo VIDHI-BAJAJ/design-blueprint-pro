@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import levisImg from "@/assets/Levis/LEVIS 4 .png";
-import raymondImg from "@/assets/Levis/LEVIS 4 .png";
-import asicsImg from "@/assets/ASIC/ASICS 2 .png";
 import louisPhilippeImg from "@/assets/Lp/LOUIS PHILIPPE 1 .png";
 import residentialImg from "@/assets/Residence/RESIDENCE 6.jpeg";
 
