@@ -5,7 +5,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import levisImg from "@/assets/Levis/LEVIS 4 .png";
 import louisPhilippeImg from "@/assets/Lp/LOUIS PHILIPPE 1 .png";
 import residentialImg from "@/assets/Residence/RESIDENCE 6.jpeg";
-
 import ccdImg from "@/assets/B.C.H Electricals/B.C.H ELECTRICALS 1 .jpeg";
 
 const projects = [
