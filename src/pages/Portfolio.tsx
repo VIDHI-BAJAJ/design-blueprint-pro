@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { ArrowUpRight } from "lucide-react";
 import heroImage from "@/assets/hero-interior.jpg";
-<<<<<<< HEAD
 import levisImg from "@/assets/Levis/LEVIS 4 .png";
 import raymondImg from "@/assets/Levis/LEVIS 4 .png";
 import asicsImg from "@/assets/ASIC/ASICS 2 .png";
@@ -12,9 +11,6 @@ import louisPhilippeImg from "@/assets/Lp/LOUIS PHILIPPE 1 .png";
 import residentialImg from "@/assets/Residence/RESIDENCE 1.jpeg"
 import calvinKleinImg from "@/assets/CK/CK 1.png";
 import ccdImg from "@/assets/B.C.H Electricals/B.C.H ELECTRICALS 1 .jpeg";
-=======
-
-// Individual project images - each project has its own unique image
 import projectLevis from "@/assets/project-levis.jpg";
 import projectLouisPhilippe from "@/assets/project-louis-philippe.jpg";
 import projectPenthouse from "@/assets/project-penthouse.jpg";
