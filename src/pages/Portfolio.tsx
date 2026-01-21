@@ -6,118 +6,77 @@ import { ArrowUpRight } from "lucide-react";
 import heroImage from "@/assets/hero-interior.jpg";
 import levisImg from "@/assets/Levis/LEVIS 4 .png";
 import raymondImg from "@/assets/Levis/LEVIS 4 .png";
-import asicsImg from "@/assets/ASIC/ASICS 2 .png";
+import asicsImg from "@/assets/ASIC/ASICS 4 .jpg";
 import louisPhilippeImg from "@/assets/Lp/LOUIS PHILIPPE 1 .png";
 import residentialImg from "@/assets/Residence/RESIDENCE 1.jpeg"
 import calvinKleinImg from "@/assets/CK/CK 1.png";
 import ccdImg from "@/assets/B.C.H Electricals/B.C.H ELECTRICALS 1 .jpeg";
-import projectLevis from "@/assets/project-levis.jpg";
-import projectLouisPhilippe from "@/assets/project-louis-philippe.jpg";
-import projectPenthouse from "@/assets/project-penthouse.jpg";
-import projectCalvinKlein from "@/assets/project-calvin-klein.jpg";
-import projectRaymond from "@/assets/project-raymond.jpg";
-import projectAsics from "@/assets/project-asics.jpg";
-import projectCcd from "@/assets/project-ccd.jpg";
-import projectClove from "@/assets/project-clove.jpg";
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
 
 const categories = ["All", "Retail", "Commercial", "Residential", "Hospitality"];
 
 const projects = [
   {
-<<<<<<< HEAD
+
     image: levisImg,
-=======
-    image: projectLevis,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Retail",
+category: "Retail",
     title: "Levi's Flagship Store",
     location: "Connaught Place, New Delhi",
     description:
       "A signature retail experience featuring custom fixtures, premium materials, and innovative display solutions.",
   },
   {
-<<<<<<< HEAD
     image: louisPhilippeImg,
-=======
-    image: projectLouisPhilippe,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Commercial",
+      category: "Commercial",
     title: "Louis Philippe Showroom",
     location: "DLF Mall, Gurugram",
     description:
       "Elegant menswear retail environment with sophisticated wood paneling and ambient lighting.",
   },
   {
-<<<<<<< HEAD
     image: residentialImg,
-=======
-    image: projectPenthouse,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Residential",
+ category: "Residential",
     title: "Luxury Penthouse",
     location: "Greater Kailash, New Delhi",
     description:
       "A bespoke residential masterpiece featuring custom furniture and premium finishes throughout.",
   },
   {
-<<<<<<< HEAD
+
     image: calvinKleinImg,
-=======
-    image: projectCalvinKlein,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Hospitality",
+  category: "Hospitality",
     title: "Calvin Klein Store",
     location: "Elante Mall, Chandigarh",
     description:
       "Minimalist luxury retail design reflecting the brand's contemporary aesthetic.",
   },
   {
-<<<<<<< HEAD
+
     image: raymondImg,
-=======
-    image: projectRaymond,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Retail",
+  category: "Retail",
     title: "Raymond Shop",
     location: "Multiple Locations",
     description:
       "Premium suiting retail experience with made-to-measure consultation areas.",
   },
   {
-<<<<<<< HEAD
     image: asicsImg,
-    category: "Retail",
-=======
-    image: projectAsics,
     category: "Commercial",
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    title: "ASICS Experience Center",
+  title: "ASICS Experience Center",
     location: "Select Citywalk, Delhi",
     description:
       "Sports retail innovation featuring the Foot ID technology zone and dynamic displays.",
   },
   {
-<<<<<<< HEAD
     image: ccdImg,
     category: "Commercial",
     title: "B.C.H Electricals",
-=======
-    image: projectCcd,
-    category: "Hospitality",
-    title: "Café Coffee Day Outlet",
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
     location: "New Delhi",
     description:
       "Warm and inviting café environment designed for comfort and social interaction.",
   },
   {
-<<<<<<< HEAD
     image: louisPhilippeImg,
-=======
-    image: projectClove,
->>>>>>> f4944202e8e70ee25fdf5c88bf0cf670bf6f7340
-    category: "Commercial",
+category: "Commercial",
     title: "Clove Dental Clinic",
     location: "Multiple Locations",
     description:
