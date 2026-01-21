@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from "lucide-react";
+import omnificLogo from "@/assets/Omnific.jpg";
 
 export function Footer() {
   return (
@@ -9,11 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-block mb-6">
+            <Link to="/" className="inline-block mb-4">
               <span className="font-display text-3xl font-semibold text-background">
                 Omnific
               </span>
             </Link>
+            <img src={omnificLogo} alt="Omnific Fitouts Logo" className="h-12 w-auto mb-4" />
             <p className="text-background/60 text-sm leading-relaxed mb-6">
               We create your imaginations. Premium interior design and fitout
               solutions for discerning clients across India.
