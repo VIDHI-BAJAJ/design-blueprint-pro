@@ -2,37 +2,40 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import projectRetail from "@/assets/project-retail.jpg";
-import projectOffice from "@/assets/project-office.jpg";
-import projectResidential from "@/assets/project-residential.jpg";
-import projectHospitality from "@/assets/project-hospitality.jpg";
+import levisImg from "@/assets/Levis/LEVIS 4 .png";
+import raymondImg from "@/assets/Levis/LEVIS 4 .png";
+import asicsImg from "@/assets/ASIC/ASICS 2 .png";
+import louisPhilippeImg from "@/assets/Lp/LOUIS PHILIPPE 1 .png";
+import residentialImg from "@/assets/Residence/RESIDENCE 6.jpeg";
+import calvinKleinImg from "@/assets/CK/CK 1.png";
+import ccdImg from "@/assets/B.C.H Electricals/B.C.H ELECTRICALS 1 .jpeg";
 
 const projects = [
   {
-    image: projectRetail,
+    image: levisImg,
     category: "Retail",
     title: "Levi's Flagship Store",
     location: "New Delhi",
     size: "large",
   },
   {
-    image: projectOffice,
-    category: "Commercial",
-    title: "Corporate Executive Suite",
+    image: louisPhilippeImg,
+    category: "Retail",
+    title: "Louis Philippe Showroom",
     location: "Gurugram",
     size: "small",
   },
   {
-    image: projectResidential,
+    image: residentialImg,
     category: "Residential",
     title: "Luxury Penthouse",
     location: "South Delhi",
     size: "small",
   },
   {
-    image: projectHospitality,
-    category: "Hospitality",
-    title: "Grand Hotel Lobby",
+    image: ccdImg,
+    category: "Commercial",
+    title: "B.C.H Electricals",
     location: "Chandigarh",
     size: "large",
   },
