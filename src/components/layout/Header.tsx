@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import omnificLogo from "@/assets/omnific-logo.webp";
+import omnificLogo from "@/assets/Omnific.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -45,7 +45,7 @@ export function Header() {
             <img 
               src={omnificLogo} 
               alt="Omnific Fitouts" 
-              className="h-10 md:h-12 w-auto"
+              className="h-15 md:h-12 w-auto"
             />
           </Link>
 
