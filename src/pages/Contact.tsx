@@ -155,12 +155,12 @@ const Contact = () => {
                         +91 87007 91534
                       </a>
                       <br />
-                      <a
+                      {/* <a
                         href="tel:01294144206"
                         className="hover:text-primary transition-colors"
                       >
                         0129-4144206
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </div>
