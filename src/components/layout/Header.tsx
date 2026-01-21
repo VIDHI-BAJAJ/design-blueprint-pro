@@ -41,11 +41,17 @@ export function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <span className="font-display text-2xl md:text-3xl font-semibold tracking-tight text-foreground">
+            <span className={`font-display text-2xl md:text-3xl font-semibold tracking-tight transition-colors duration-300 ${
+              isScrolled ? "text-foreground" : "text-primary"
+            }`}>
               Omnific
             </span>
-            <span className="hidden sm:block w-px h-8 bg-primary/30" />
-            <span className="hidden sm:block font-sans text-xs uppercase tracking-[0.3em] text-muted-foreground">
+            <span className={`hidden sm:block w-px h-8 transition-colors duration-300 ${
+              isScrolled ? "bg-primary/30" : "bg-primary/50"
+            }`} />
+            <span className={`hidden sm:block font-sans text-xs uppercase tracking-[0.3em] transition-colors duration-300 ${
+              isScrolled ? "text-muted-foreground" : "text-primary/80"
+            }`}>
               Fitouts
             </span>
           </Link>
@@ -59,7 +65,9 @@ export function Header() {
                   className={`font-sans text-sm tracking-wide transition-colors duration-300 link-underline ${
                     location.pathname === link.path
                       ? "text-primary"
-                      : "text-foreground/80 hover:text-foreground"
+                      : isScrolled 
+                        ? "text-foreground/80 hover:text-foreground"
+                        : "text-primary/80 hover:text-primary"
                   }`}
                 >
                   {link.name}
@@ -79,7 +87,9 @@ export function Header() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className={`lg:hidden p-2 transition-colors duration-300 ${
+              isScrolled ? "text-foreground" : "text-primary"
+            }`}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
