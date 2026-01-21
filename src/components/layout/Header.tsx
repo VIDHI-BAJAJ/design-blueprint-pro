@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import omnificLogo from "@/assets/omnific-logo.webp";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -41,19 +42,11 @@ export function Header() {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <span className={`font-display text-2xl md:text-3xl font-semibold tracking-tight transition-colors duration-300 ${
-              isScrolled ? "text-foreground" : "text-primary"
-            }`}>
-              Omnific
-            </span>
-            <span className={`hidden sm:block w-px h-8 transition-colors duration-300 ${
-              isScrolled ? "bg-primary/30" : "bg-primary/50"
-            }`} />
-            <span className={`hidden sm:block font-sans text-xs uppercase tracking-[0.3em] transition-colors duration-300 ${
-              isScrolled ? "text-muted-foreground" : "text-primary/80"
-            }`}>
-              Fitouts
-            </span>
+            <img 
+              src={omnificLogo} 
+              alt="Omnific Fitouts" 
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
