@@ -14,7 +14,6 @@ import ccdImg from "@/assets/B.C.H Electricals/B.C.H ELECTRICALS 1 .jpeg";
 
 const categories = ["All", "Retail", "Commercial", "Residential", "Hospitality"];
 
-
 const projects = [
   {
 

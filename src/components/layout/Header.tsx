@@ -12,6 +12,7 @@ const navLinks = [
   { name: "Process", path: "/process" }
 ];
 
+
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
